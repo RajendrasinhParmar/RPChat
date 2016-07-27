@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -27,20 +28,11 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginAnonymouslyDidTapped(sender: AnyObject) {
-        print("Login Anonymously did button tapped")
         
-        //Anonymously Log use in
-        //switch view by setting navigation controller as rootview controller
         
-        //Create a main storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        //From main storyboard instantiate a navigation controller
         let navVC = storyboard.instantiateViewControllerWithIdentifier("navigationVC") as! UINavigationController
-        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        //set navigation view as root view
         appDelegate.window?.rootViewController = navVC
     }
     
