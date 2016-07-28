@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
 
     @IBOutlet var anonymousLoginBtn: UIButton!
     override func viewDidLoad() {
@@ -19,6 +20,9 @@ class LoginViewController: UIViewController {
         //set border of button
         anonymousLoginBtn.layer.borderWidth = 2.0
         anonymousLoginBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        GIDSignIn.sharedInstance().clientID = "1015201472979-o3qnjlvbo7a1mrbflrubsdt0bqu7b0fe.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,26 +33,21 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginAnonymouslyDidTapped(sender: AnyObject) {
         
+        Helper.helper.loginAnonymously()
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let navVC = storyboard.instantiateViewControllerWithIdentifier("navigationVC") as! UINavigationController
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.window?.rootViewController = navVC
     }
     
     @IBAction func googleLoginDidTapped(sender: AnyObject) {
-        print("google Login did tapped")
-        
-        //Create a main storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        //From main storyboard instantiate a navigation controller
-        let navVC = storyboard.instantiateViewControllerWithIdentifier("navigationVC") as! UINavigationController
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        //set navigation view as root view
-        appDelegate.window?.rootViewController = navVC
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+        if error != nil {
+            print(error.localizedDescription)
+            return
+        }
+        print(user.authentication)
+        Helper.helper.loginWithGoogle(user.authentication)
     }
     /*
     // MARK: - Navigation

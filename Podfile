@@ -6,5 +6,6 @@ use_frameworks!
 target 'RPChat' do
  pod 'Firebase'
  pod 'Firebase/Auth'
+ pod 'GoogleSignIn'
 end
 
