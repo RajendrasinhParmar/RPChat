@@ -7,5 +7,7 @@ target 'RPChat' do
  pod 'Firebase'
  pod 'Firebase/Auth'
  pod 'GoogleSignIn'
+ pod 'JSQMessagesViewController'
+ pod 'Firebase/Database'
 end
 

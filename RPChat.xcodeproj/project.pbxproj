@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		097319981D48B8AF00733D62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097319971D48B8AF00733D62 /* GoogleService-Info.plist */; };
-		097319991D48DB1500733D62 /* Pods_RPChat.framework in Resources */ = {isa = PBXBuildFile; fileRef = 82BD69B15C2B5183BE8EA938 /* Pods_RPChat.framework */; };
+		097319991D48DB1500733D62 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0973199B1D48DFBD00733D62 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973199A1D48DFBD00733D62 /* Helper.swift */; };
 		0973199C1D48F17400733D62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D439F1D43B3A0006BF212 /* LoginViewController.swift */; };
-		097319A31D4935C100733D62 /* Pods_RPChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BD69B15C2B5183BE8EA938 /* Pods_RPChat.framework */; };
 		098D438A1D43B152006BF212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D43891D43B152006BF212 /* AppDelegate.swift */; };
 		098D438F1D43B152006BF212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098D438D1D43B152006BF212 /* Main.storyboard */; };
 		098D43911D43B152006BF212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098D43901D43B152006BF212 /* Assets.xcassets */; };
@@ -22,6 +21,7 @@
 		09F351351D468F88008586FA /* googleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F351301D468F88008586FA /* googleButton.png */; };
 		09F351361D468F88008586FA /* OrLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F351311D468F88008586FA /* OrLine.png */; };
 		09F351371D468F88008586FA /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F351321D468F88008586FA /* profileImage.png */; };
+		5CE1FA3DF90CE24DA7B41503 /* Pods_RPChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE179826F809A023BC5D54CA /* Pods_RPChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		09F351311D468F88008586FA /* OrLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrLine.png; sourceTree = "<group>"; };
 		09F351321D468F88008586FA /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
 		09F35DF61D49B6C200898113 /* RPChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		5C2EA9E3412546794DCD2AF3 /* Pods-RPChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPChat/Pods-RPChat.debug.xcconfig"; sourceTree = "<group>"; };
-		7F6FDCB5A731D8B2012D0920 /* Pods-RPChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPChat/Pods-RPChat.release.xcconfig"; sourceTree = "<group>"; };
-		82BD69B15C2B5183BE8EA938 /* Pods_RPChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE179826F809A023BC5D54CA /* Pods_RPChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48201415AAA11A6BA7D87E9 /* Pods-RPChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPChat/Pods-RPChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4F626E52F895AC6C955885 /* Pods-RPChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPChat/Pods-RPChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097319A31D4935C100733D62 /* Pods_RPChat.framework in Frameworks */,
+				5CE1FA3DF90CE24DA7B41503 /* Pods_RPChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 				09F35DF61D49B6C200898113 /* RPChat-Bridging-Header.h */,
 				098D43881D43B152006BF212 /* RPChat */,
 				098D43871D43B152006BF212 /* Products */,
-				CE16628DB9C261ABB7866D40 /* Pods */,
-				E03059A26260766E30B8A2E0 /* Frameworks */,
+				D8E4111AA23A6D06A2E2B67C /* Pods */,
+				DF1679192B7122A1CC212B26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,19 +106,19 @@
 			path = "Resources-GoChat";
 			sourceTree = "<group>";
 		};
-		CE16628DB9C261ABB7866D40 /* Pods */ = {
+		D8E4111AA23A6D06A2E2B67C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C2EA9E3412546794DCD2AF3 /* Pods-RPChat.debug.xcconfig */,
-				7F6FDCB5A731D8B2012D0920 /* Pods-RPChat.release.xcconfig */,
+				E48201415AAA11A6BA7D87E9 /* Pods-RPChat.debug.xcconfig */,
+				FE4F626E52F895AC6C955885 /* Pods-RPChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E03059A26260766E30B8A2E0 /* Frameworks */ = {
+		DF1679192B7122A1CC212B26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82BD69B15C2B5183BE8EA938 /* Pods_RPChat.framework */,
+				AE179826F809A023BC5D54CA /* Pods_RPChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,12 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 098D43981D43B152006BF212 /* Build configuration list for PBXNativeTarget "RPChat" */;
 			buildPhases = (
-				B1402C425E2DFBDE451E74D0 /* Check Pods Manifest.lock */,
+				F260358844486B9C8C686DCE /* 📦 Check Pods Manifest.lock */,
 				098D43821D43B152006BF212 /* Sources */,
 				098D43831D43B152006BF212 /* Frameworks */,
 				098D43841D43B152006BF212 /* Resources */,
-				2017F6AE1F02E95A9DF1EA06 /* Embed Pods Frameworks */,
-				F53AC84F80E018F4EC9B7C20 /* Copy Pods Resources */,
+				4C7BC6388E2741B1F340153A /* 📦 Embed Pods Frameworks */,
+				521A1740B050B2349DFF90BA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097319991D48DB1500733D62 /* Pods_RPChat.framework in Resources */,
+				097319991D48DB1500733D62 /* (null) in Resources */,
 				09F351331D468F88008586FA /* backgroundPhoto.png in Resources */,
 				098D43941D43B152006BF212 /* LaunchScreen.storyboard in Resources */,
 				097319981D48B8AF00733D62 /* GoogleService-Info.plist in Resources */,
@@ -200,48 +200,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2017F6AE1F02E95A9DF1EA06 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPChat/Pods-RPChat-frameworks.sh\"\n";
-		};
-		B1402C425E2DFBDE451E74D0 /* Check Pods Manifest.lock */ = {
+		4C7BC6388E2741B1F340153A /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPChat/Pods-RPChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		521A1740B050B2349DFF90BA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPChat/Pods-RPChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F260358844486B9C8C686DCE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
-		};
-		F53AC84F80E018F4EC9B7C20 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPChat/Pods-RPChat-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -364,7 +366,7 @@
 		};
 		098D43991D43B152006BF212 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2EA9E3412546794DCD2AF3 /* Pods-RPChat.debug.xcconfig */;
+			baseConfigurationReference = E48201415AAA11A6BA7D87E9 /* Pods-RPChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RPChat/Info.plist;
@@ -379,7 +381,7 @@
 		};
 		098D439A1D43B152006BF212 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F6FDCB5A731D8B2012D0920 /* Pods-RPChat.release.xcconfig */;
+			baseConfigurationReference = FE4F626E52F895AC6C955885 /* Pods-RPChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RPChat/Info.plist;
