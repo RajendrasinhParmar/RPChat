@@ -41,7 +41,7 @@ class Helper {
         })
     }
     
-    private func switchToNavigationViewController(){
+    func switchToNavigationViewController(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navVC = storyboard.instantiateViewControllerWithIdentifier("navigationVC") as! UINavigationController
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
