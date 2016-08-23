@@ -10,6 +10,7 @@ import Foundation
 import FirebaseAuth
 import UIKit
 import GoogleSignIn
+import FirebaseDatabase
 
 class Helper {
     static let helper = Helper()
@@ -18,6 +19,8 @@ class Helper {
         FIRAuth.auth()?.signInAnonymouslyWithCompletion({ (anonymouseUser: FIRUser?, error: NSError?) in
             if error == nil {
                 print(anonymouseUser!.uid)
+                let newUser = FIRDatabase.database().reference().child("users").child(anonymouseUser!.uid)
+                newUser.setValue(["displayname":"anonymous","id" : "\(anonymouseUser!.uid)", "profileUrl":""])
                 self.switchToNavigationViewController()
             }else{
                 print(error!.localizedDescription)
@@ -36,6 +39,9 @@ class Helper {
             }else{
                 print(user?.email)
                 print(user?.displayName)
+                
+                let newUser = FIRDatabase.database().reference().child("users").child(user!.uid)
+                newUser.setValue(["displayname":"\(user!.displayName!)","id" : "\(user!.uid)", "profileUrl":"\(user!.photoURL!)"])
                 self.switchToNavigationViewController()
             }
         })
